@@ -11,6 +11,9 @@
   --tx-white-cl: #ffffff;
   --tx-black-cl: #000000;
 
+  /* icon-color */
+  --icon-cl: rgba(175, 177, 184, 1)
+
   /* background color*/
   --bg-main-cl: #ffffff;
   --bg-sec-cl: #f5f4fa;
@@ -170,6 +173,10 @@ li > .header-contact {
   color: var(--tx-blue-cl);
 }
 
+/* .header-contact-icon {
+  fill: currentColor;
+} */
+
 /* hero */
 
 .hero {
@@ -293,6 +300,15 @@ li > .header-contact {
 .team-list > li {
   margin-right: var(--mg-rt-li);
   width: 270px;
+  height: 428px;
+  background-color: var(--tx-white-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-list > li:last-child {
@@ -300,15 +316,8 @@ li > .header-contact {
 }
 
 .team-member-list {
-  background-color: var(--bg-main-cl);
   padding-top: 30px;
   padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-member {
@@ -328,6 +337,22 @@ li > .header-contact {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--tx-white-cl);
+}
+
+.social-icon {
+  fill: var(--icon-cl);
 }
 
 /* footer */
