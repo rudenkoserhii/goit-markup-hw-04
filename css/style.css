@@ -180,6 +180,10 @@ li > .header-contact {
   fill: currentColor;
 }
 
+.header-contact-icon:hover {
+  fill: var(--tx-blue-cl);
+}
+
 /* hero */
 
 .hero {
@@ -190,8 +194,13 @@ li > .header-contact {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero.jpg);
+  background-repeat: no-repeat;
 
   text-align: center;
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -273,7 +282,6 @@ li > .header-contact {
   justify-content: center;
   align-items: center;
 
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
 
@@ -372,10 +380,7 @@ li > .header-contact {
 .social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 10px;
-
-  margin-bottom: 30px;
 }
 
 .social-link {
@@ -442,6 +447,10 @@ li > .header-contact {
   border: 1px solid var(--tx-blue-cl);
 }
 
+.client:hover .client-icon {
+  fill: var(--tx-blue-cl);
+}
+
 /* footer */
 .footer {
   background-color: var(--bg-foot-cl);
@@ -452,7 +461,7 @@ li > .header-contact {
 
 .footer-container {
   display: flex;
-
+  align-items: baseline;
   gap: 70px;
 }
 
@@ -513,11 +522,6 @@ address {
   fill: var(--tx-white-cl);
 }
 
-.footer-social-block {
-  align-self: flex-start;
-  margin-top: 12px;
-}
-
 /* portfolio */
 
 .portfolio {
@@ -552,6 +556,8 @@ address {
 
   border-radius: 4px;
   border: 0ch;
+
+  padding: 94 8 50 8;
 }
 
 .portfolio-btn:hover,
@@ -576,7 +582,12 @@ address {
   margin: 15px;
 }
 
-.portfolios > li:hover {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
